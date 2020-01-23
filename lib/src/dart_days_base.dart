@@ -1,26 +1,59 @@
 class DartDays {
+  String _timeDifferenceAsString(DateTime from, DateTime to) {
+    // ignore: omit_local_variable_types
+    Duration dif = to.difference(from);
+    if (dif.inDays > 365) {
+      final years = (dif.inDays / 365).floor();
+      final prefix = ((dif.inDays / 365).floor() == 1) ? 'year' : 'years';
+      return '$years $prefix';
+    } else if (dif.inDays > 30) {
+      final months = (dif.inDays / 30).floor();
+      final prefix = ((dif.inDays / 30).floor() == 1) ? 'month' : 'months';
+      return '$months $prefix';
+    } else if (dif.inDays > 7) {
+      final weeks = (dif.inDays / 7).floor();
+      final prefix = (dif.inDays / 7).floor() == 1 ? 'week' : 'weeks';
+      return '$weeks $prefix';
+    } else if (dif.inDays > 0) {
+      final days = dif.inDays;
+      final prefix = dif.inDays == 1 ? 'day' : 'days';
+      return '$days $prefix';
+    } else if (dif.inHours > 0) {
+      final hours = dif.inHours;
+      final prefix = dif.inHours == 1 ? 'hour' : 'hours';
+      return '$hours $prefix';
+    } else if (dif.inMinutes > 0) {
+      final minutes = dif.inMinutes;
+      final prefix = dif.inMinutes == 1 ? 'minute' : 'minutes';
+      return '$minutes $prefix';
+    } else if (dif.inSeconds > 0) {
+      final seconds = dif.inSeconds;
+      final prefix = dif.inSeconds == 1 ? 'second' : 'seconds';
+      return '$seconds $prefix';
+    } else if (dif.inSeconds == 0) {
+      return 'just now';
+    } else {
+      return 'finished';
+    }
+  }
 
   String timesAgo(DateTime d) {
-    // ignore: omit_local_variable_types
-    Duration dif = DateTime.now().difference(d);
-    if (dif.inDays > 365) {
-      // ignore: omit_local_variable_types
-      int years = (dif.inDays / 365).floor();
-      // ignore: omit_local_variable_types
-      String prefix = ((dif.inDays / 365).floor() == 1) ? 'year' : 'years';
-      return '$years $prefix ago';
-    } else if (dif.inDays > 30) {
-      return "${(dif.inDays / 30).floor()} ${(dif.inDays / 30).floor() == 1 ? 'month' : 'months'} ago";
-    } else if (dif.inDays > 7) {
-      return "${(dif.inDays / 7).floor()} ${(dif.inDays / 7).floor() == 1 ? 'week' : 'weeks'} ago";
-    } else if (dif.inDays > 0) {
-      return "${dif.inDays} ${dif.inDays == 1 ? 'day' : 'days'} ago";
-    } else if (dif.inHours > 0) {
-      return "${dif.inHours} ${dif.inHours == 1 ? 'hour' : 'hours'} ago";
-    } else if (dif.inMinutes > 0) {
-      return "${dif.inMinutes} ${dif.inMinutes == 1 ? 'minute' : 'minutes'} ago";
+    final timeDif = _timeDifferenceAsString(d, DateTime.now());
+
+    if (timeDif == 'just now') {
+      return timeDif;
+    } else if (timeDif == 'finished') {
+      return '';
+    }
+
+    return timeDif;
+  }
+
+  String timesLeft({DateTime from, DateTime to}) {
+    if (to == null) {
+      return _timeDifferenceAsString(from, DateTime.now());
     } else {
-      return 'just now';
+      return _timeDifferenceAsString(from, to);
     }
   }
 }

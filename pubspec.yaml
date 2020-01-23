@@ -1,10 +1,10 @@
 name: dart_days
-description: A starting point for Dart libraries or applications.
-# version: 1.0.0
-# homepage: https://www.example.com
+description: Simple yet powerful Dart and Flutter Date manipulation package.
+version: 0.0.2-dev.1
+homepage: https://github.com/Blasanka/dart_days
 
 environment:
-  sdk: '>=2.7.0 <3.0.0'
+  sdk: '>=2.5.0 <3.0.0'
 
 #dependencies:
 #  path: ^1.6.0
