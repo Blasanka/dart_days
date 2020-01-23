@@ -46,7 +46,7 @@ class DartDays {
       return '';
     }
 
-    return timeDif;
+    return '$timeDif ago';
   }
 
   String timesLeft({DateTime from, DateTime to}) {

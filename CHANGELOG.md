@@ -1,3 +1,11 @@
+## 0.0.4
+
+- Ago prefix not showing bug fixed.
+
+## 0.0.3
+
+- Tested and working fine.
+
 ## 0.0.2-dev.1
 
 - Given a parameter to add `from` date and `to` date for `timesLeft`.
