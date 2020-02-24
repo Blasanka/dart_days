@@ -1,7 +1,7 @@
-## 0.0.5
+## 0.0.5+hotfix.1
 
 - A method for getting number of days in this/current month.
-  `DartDays.numberOfDaysInCurrentMonth();`
+  `DartDays.numberOfDaysInThisMonth();`
 
 ## 0.0.4
 

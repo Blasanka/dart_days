@@ -57,7 +57,7 @@ class DartDays {
     }
   }
 
-  static int numberOfDaysInCurrentMonth() {
+  static int numberOfDaysInThisMonth() {
     final date = DateTime.now();
     final dateForValues = DateTime(date.year, date.month + 1, 0);
     return dateForValues.day;
