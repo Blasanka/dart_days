@@ -62,4 +62,16 @@ class DartDays {
     final dateForValues = DateTime(date.year, date.month + 1, 0);
     return dateForValues.day;
   }
+
+  static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
+    final weekDays = ['Monday', 'Tuesday', 'Wendsday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    if (numOfChars > 6 || numOfChars == 0) {
+      return isCapitalized
+          ? weekDays.map((f) => f.toUpperCase()).toList()
+          : weekDays;
+    }
+    return isCapitalized
+        ? weekDays.map((f) => f.substring(0, numOfChars).toUpperCase())
+        : weekDays.map((f) => f.substring(0, numOfChars));
+  }
 }

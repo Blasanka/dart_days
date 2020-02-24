@@ -12,6 +12,7 @@ void main() {
    print('Times Ago: ${dartDays.timesAgo(DateTime.parse('2020-01-02'))}');
    print('Times Left: ${dartDays.timesLeft(DateTime.parse('2020-01-02'))}');
    print("Number of days in current month: ${DartDays.numberOfDaysInThisMonth()}");
+  print('Days Name of week: ${DartDays.daysNameOfWeek().join(", ")}');
 }
 
 ```

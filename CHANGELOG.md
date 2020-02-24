@@ -1,3 +1,8 @@
+## 0.0.6
+
+- A method for getting weekdays / names of the days in a week.
+  `DartDays.daysNameOfWeek();`
+
 ## 0.0.5+hotfix.1
 
 - A method for getting number of days in this/current month.
