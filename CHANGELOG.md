@@ -1,3 +1,8 @@
+## 0.0.6+hotfix.1
+
+- `type 'MappedListIterable<String, String>' is not a subtype of type 'List<String>'`
+issue fixed.
+
 ## 0.0.6
 
 - A method for getting weekdays / names of the days in a week.

@@ -71,7 +71,7 @@ class DartDays {
           : weekDays;
     }
     return isCapitalized
-        ? weekDays.map((f) => f.substring(0, numOfChars).toUpperCase())
-        : weekDays.map((f) => f.substring(0, numOfChars));
+        ? weekDays.map((f) => f.substring(0, numOfChars).toUpperCase()).toList()
+        : weekDays.map((f) => f.substring(0, numOfChars)).toList();
   }
 }
