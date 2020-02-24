@@ -63,6 +63,12 @@ class DartDays {
     return dateForValues.day;
   }
 
+  static int numberOfDaysInMonth(int month) {
+    final date = DateTime.now();
+    final dateForValues = DateTime(date.year, month + 1, 0);
+    return dateForValues.day;
+  }
+
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
     final weekDays = ['Monday', 'Tuesday', 'Wendsday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     if (numOfChars > 6 || numOfChars == 0) {

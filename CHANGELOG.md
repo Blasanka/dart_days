@@ -1,3 +1,8 @@
+## 0.0.6+hotfix.2
+
+- Method for to get number of days in any month.
+  `DartDays.numberOfDaysInMonth()`
+
 ## 0.0.6+hotfix.1
 
 - `type 'MappedListIterable<String, String>' is not a subtype of type 'List<String>'`
