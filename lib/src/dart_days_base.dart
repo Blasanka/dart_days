@@ -56,4 +56,10 @@ class DartDays {
       return _timeDifferenceAsString(from, to);
     }
   }
+
+  static int numberOfDaysInCurrentMonth() {
+    final date = DateTime.now();
+    final dateForValues = DateTime(date.year, date.month + 1, 0);
+    return dateForValues.day;
+  }
 }

@@ -1,3 +1,8 @@
+## 0.0.5
+
+- A method for getting number of days in this/current month.
+  `DartDays.numberOfDaysInCurrentMonth();`
+
 ## 0.0.4
 
 - Ago prefix not showing bug fixed.
