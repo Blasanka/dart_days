@@ -1,3 +1,8 @@
+## 0.0.7
+
+- Method for to get name of any month.
+  `DartDays.nameOfMonth(2)`
+
 ## 0.0.6+hotfix.2
 
 - Method for to get number of days in any month.

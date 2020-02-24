@@ -69,6 +69,37 @@ class DartDays {
     return dateForValues.day;
   }
 
+  static String nameOfMonth(int month, {bool isCapitalized = false}) {
+    switch (month) {
+      case DateTime.january:
+        return isCapitalized ? 'January'.toUpperCase() : 'January';
+      case DateTime.february:
+        return isCapitalized ? 'February'.toUpperCase() : 'February';
+      case DateTime.march:
+        return isCapitalized ? 'March'.toUpperCase() : 'March';
+      case DateTime.april:
+        return isCapitalized ? 'April'.toUpperCase() : 'April';
+      case DateTime.may:
+        return isCapitalized ? 'May'.toUpperCase() : 'May';
+      case DateTime.june:
+        return isCapitalized ? 'June'.toUpperCase() : 'June';
+      case DateTime.july:
+        return isCapitalized ? 'July'.toUpperCase() : 'July';
+      case DateTime.august:
+        return isCapitalized ? 'August'.toUpperCase() : 'August';
+      case DateTime.september:
+        return isCapitalized ? 'September'.toUpperCase() : 'September';
+      case DateTime.october:
+        return isCapitalized ? 'October'.toUpperCase() : 'October';
+      case DateTime.november:
+        return isCapitalized ? 'November'.toUpperCase() : 'November';
+      case DateTime.december:
+        return isCapitalized ? 'December'.toUpperCase() : 'December';
+      default:
+        return isCapitalized ? 'January'.toUpperCase() : 'January';
+    }
+  }
+
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
     final weekDays = ['Monday', 'Tuesday', 'Wendsday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     if (numOfChars > 6 || numOfChars == 0) {

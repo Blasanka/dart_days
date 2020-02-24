@@ -4,6 +4,8 @@
     <list default="true" id="3a5c006b-72c8-41dc-bf59-8cc14cdd63a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/dart_days_example.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/dart_days_example.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/dart_days_base.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/dart_days_base.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
