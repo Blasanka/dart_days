@@ -69,6 +69,11 @@ class DartDays {
     return dateForValues.day;
   }
 
+  static int numberOfDaysForDate(DateTime date) {
+    final dateForValues = DateTime(date.year, date.month + 1, 0);
+    return dateForValues.day;
+  }
+
   static String nameOfMonth(int month, {bool isCapitalized = false}) {
     switch (month) {
       case DateTime.january:

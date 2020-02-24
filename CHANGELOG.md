@@ -1,3 +1,8 @@
+## 0.0.7+hotfix.1
+
+- Method for to get number of days for any month / year.
+  `DartDays.numberOfDaysForDate(DateTime("2019-02-02""))`
+
 ## 0.0.7
 
 - Method for to get name of any month.
