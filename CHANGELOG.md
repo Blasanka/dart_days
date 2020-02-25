@@ -1,3 +1,9 @@
+## 0.0.7+hotfix.2
+
+- Method to get name of the week day (1 up to 7) name 
+  and name of the first day of month Ex: `Sunday`.
+  `DartDays.nameOfTheWeekDay()` and `DartDays.nameOfTheFirstDayOfMonth()`
+
 ## 0.0.7+hotfix.1
 
 - Method for to get number of days for any month / year.

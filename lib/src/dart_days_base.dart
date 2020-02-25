@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 class DartDays {
   String _timeDifferenceAsString(DateTime from, DateTime to) {
     // ignore: omit_local_variable_types
@@ -103,6 +105,37 @@ class DartDays {
       default:
         return isCapitalized ? 'January'.toUpperCase() : 'January';
     }
+  }
+
+  static String nameOfTheWeekDay(int day) {
+    if (day <= 7 || day >= 1) {
+      switch(day) {
+        case 1:
+          return 'Monday';
+        case 2:
+          return 'Tuesday';
+        case 3:
+          return 'Wednesday';
+        case 4:
+          return 'Thursday';
+        case 5:
+          return 'Friday';
+        case 6:
+          return 'Saturday';
+        case 7:
+          return 'Sunday';
+        default:
+          return 'Monday';
+      }
+    } else {
+      log('Valid number are 1 upto 7');
+      return 'Monday';
+    }
+  }
+
+  static String nameOfTheFirstDayOfMonth() {
+    final today = DateTime.now();
+    return DartDays.nameOfTheWeekDay(today.weekday);
   }
 
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
