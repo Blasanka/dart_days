@@ -145,12 +145,15 @@ class DartDays {
     }
   }
 
-  static int weekDayOfFirstDayOfMonth({int numOfChars = 0}) {
+  /// if zero or [arg] month not specified current month will be used
+  static int weekDayOfFirstDayOfMonth({int month = 0}) {
     final today = DateTime.now();
-    final firstDay = DateTime(today.year, today.month, 1);
+    final decideMonth = month == 0 ? today.month : month;
+    final firstDay = DateTime(today.year, decideMonth, 1);
     return firstDay.weekday;
   }
 
+  /// [arg] numOfChars for to get how many characters needed from the day name.
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
     final weekDays = ['Monday', 'Tuesday', 'Wendsday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     if (numOfChars > 6 || numOfChars == 0) {

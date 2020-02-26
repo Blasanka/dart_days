@@ -8,4 +8,5 @@ void main() {
   print('Days Name of week: ${DartDays.daysNameOfWeek().join(", ")}');
   print('Name of this month: ${DartDays.nameOfMonth(DateTime.now().month)}');
   print('Name of the first day of this month: ${DartDays.nameOfFirstDayOfMonth()}');
+  print('Weekday of month: ${DartDays.weekDayOfFirstDayOfMonth(month: 1)}');
 }

@@ -1,3 +1,8 @@
+## 0.0.7+hotfix.5
+
+- Added support for getting weekday for any month by providing a parameter
+ to `DartDays.weekDayOfFirstDayOfMonth(month: 1)`.
+
 ## 0.0.7+hotfix.4
 
 - `DartDays.nameOfFirstDayOfMonth()` incorrect issue fixed.
