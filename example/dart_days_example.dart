@@ -5,8 +5,8 @@ void main() {
   print('Times Ago: ${dartDays.timesAgo(DateTime.parse('2020-01-02'))}');
   print('Times Left: ${dartDays.timesLeft(from: DateTime.parse('2019-01-02'), to: DateTime.parse('2020-01-02'))}');
   print('Get number of days in current month: ${DartDays.numberOfDaysInThisMonth()}');
-  print('Days Name of week: ${DartDays.daysNameOfWeek().join(", ")}');
+  print('Days Name of week: ${DartDays.daysNameOfWeek(sundayFirst: true).join(", ")}');
   print('Name of this month: ${DartDays.nameOfMonth(DateTime.now().month)}');
   print('Name of the first day of this month: ${DartDays.nameOfFirstDayOfMonth()}');
-  print('Weekday of month: ${DartDays.weekDayOfFirstDayOfMonth(month: 1)}');
+  print('Weekday of month: ${DartDays.weekDayOfFirstDayOfMonth(month: 3)}');
 }
