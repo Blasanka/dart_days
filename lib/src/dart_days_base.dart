@@ -133,7 +133,7 @@ class DartDays {
     }
   }
 
-  static String nameOfTheFirstDayOfMonth({int numOfChars = 0}) {
+  static String nameOfFirstDayOfMonth({int numOfChars = 0}) {
     final today = DateTime.now();
     final firstDay = DateTime(today.year, today.month, 1);
 
@@ -143,6 +143,12 @@ class DartDays {
     } else {
       return DartDays.nameOfTheWeekDay(firstDay.weekday);
     }
+  }
+
+  static int weekDayOfFirstDayOfMonth({int numOfChars = 0}) {
+    final today = DateTime.now();
+    final firstDay = DateTime(today.year, today.month, 1);
+    return firstDay.weekday;
   }
 
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {

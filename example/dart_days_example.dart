@@ -7,5 +7,5 @@ void main() {
   print('Get number of days in current month: ${DartDays.numberOfDaysInThisMonth()}');
   print('Days Name of week: ${DartDays.daysNameOfWeek().join(", ")}');
   print('Name of this month: ${DartDays.nameOfMonth(DateTime.now().month)}');
-  print('Name of the first day of this month: ${DartDays.nameOfTheFirstDayOfMonth()}');
+  print('Name of the first day of this month: ${DartDays.nameOfFirstDayOfMonth()}');
 }

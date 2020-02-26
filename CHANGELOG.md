@@ -1,13 +1,14 @@
-## 0.0.7+hotfix.3
+## 0.0.7+hotfix.4
 
-- `DartDays.nameOfTheFirstDayOfMonth()` incorrect issue fixed.
+- `DartDays.nameOfFirstDayOfMonth()` incorrect issue fixed.
+- `DartDays.weekDayOfFirstDayOfMonth()` to get the first day of month day(as number).
 - Example updated with fixing a bug.
 
 ## 0.0.7+hotfix.2
 
 - Method to get name of the week day (1 up to 7) name 
   and name of the first day of month Ex: `Sunday`.
-  `DartDays.nameOfTheWeekDay()` and `DartDays.nameOfTheFirstDayOfMonth()`
+  `DartDays.nameOfTheWeekDay()` and `DartDays.nameOfFirstDayOfMonth()`
 
 ## 0.0.7+hotfix.1
 
