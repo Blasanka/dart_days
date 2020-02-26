@@ -1,3 +1,8 @@
+## 0.0.7+hotfix.3
+
+- `DartDays.nameOfTheFirstDayOfMonth()` incorrect issue fixed.
+- Example updated with fixing a bug.
+
 ## 0.0.7+hotfix.2
 
 - Method to get name of the week day (1 up to 7) name 

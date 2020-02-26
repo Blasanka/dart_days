@@ -107,35 +107,42 @@ class DartDays {
     }
   }
 
-  static String nameOfTheWeekDay(int day) {
+  static String nameOfTheWeekDay(int day, {bool isCapitalized = false}) {
     if (day <= 7 || day >= 1) {
       switch(day) {
         case 1:
-          return 'Monday';
+          return isCapitalized ? 'MONDAY' : 'Monday';
         case 2:
-          return 'Tuesday';
+          return isCapitalized ? 'TUESDAY' : 'Tuesday';
         case 3:
-          return 'Wednesday';
+          return isCapitalized ? 'WEDNESDAY' : 'Wednesday';
         case 4:
-          return 'Thursday';
+          return isCapitalized ? 'THURSDAY' : 'Thursday';
         case 5:
-          return 'Friday';
+          return isCapitalized ? 'FRIDAY' : 'Friday';
         case 6:
-          return 'Saturday';
+          return isCapitalized ? 'SATURDAY' : 'Saturday';
         case 7:
-          return 'Sunday';
+          return isCapitalized ? 'SUNDAY' : 'Sunday';
         default:
-          return 'Monday';
+          return isCapitalized ? 'MONDAY' : 'Monday';
       }
     } else {
       log('Valid number are 1 upto 7');
-      return 'Monday';
+      return isCapitalized ? 'MONDAY' : 'Monday';
     }
   }
 
-  static String nameOfTheFirstDayOfMonth() {
+  static String nameOfTheFirstDayOfMonth({int numOfChars = 0}) {
     final today = DateTime.now();
-    return DartDays.nameOfTheWeekDay(today.weekday);
+    final firstDay = DateTime(today.year, today.month, 1);
+
+    if (numOfChars > 0 && numOfChars < 6) {
+      return DartDays.nameOfTheWeekDay(firstDay.weekday).substring(
+          0, numOfChars);
+    } else {
+      return DartDays.nameOfTheWeekDay(firstDay.weekday);
+    }
   }
 
   static List<String> daysNameOfWeek({int numOfChars = 0, bool isCapitalized = false}) {
