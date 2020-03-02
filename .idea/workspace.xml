@@ -4,7 +4,6 @@
     <list default="true" id="3a5c006b-72c8-41dc-bf59-8cc14cdd63a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/dart_days_example.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/dart_days_example.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/dart_days_base.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/dart_days_base.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -71,10 +70,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579765097422" />
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1579837740293">
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1582776946193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579837740293" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582776946193" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582633644590">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

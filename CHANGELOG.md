@@ -1,3 +1,7 @@
+## 0.0.7+hotfix.6
+
+- Added parameter for `daysNameOfWeek()` to get sunday as first element in List.
+
 ## 0.0.7+hotfix.5
 
 - Added support for getting weekday for any month by providing a parameter
