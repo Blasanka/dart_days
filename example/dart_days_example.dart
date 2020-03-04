@@ -9,5 +9,6 @@ void main() {
   print('Name of this month: ${DartDays.nameOfMonth(DateTime.now().month)}');
   print('Name of the first day of this month: ${DartDays.nameOfFirstDayOfMonth()}');
   print('Weekday of month: ${DartDays.weekDayOfFirstDayOfMonth(month: 3)}');
-  print('Example ${DartDays.dayOfSaturdayForDate(DateTime.now())}');
+  print('This month days for Saturday: ${DartDays.dayOfSaturdayForDate(DateTime.now())}');
+  print('This month days for Saturday: ${DartDays.daysInWeekdayForDate(6, DateTime.now())}');
 }
