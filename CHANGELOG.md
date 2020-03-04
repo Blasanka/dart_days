@@ -1,3 +1,11 @@
+## 0.0.7+hotfix.8
+
+- Seven new methods for getting days for a weekday for a particular date.
+
+## 0.0.7+hotfix.7
+
+- Added support to get first day of month for any year `weekDayOfFirstDayOfMonth`.
+
 ## 0.0.7+hotfix.6
 
 - Added parameter for `daysNameOfWeek()` to get sunday as first element in List.

@@ -172,4 +172,82 @@ class DartDays {
         ? weekDays.map((f) => f.substring(0, numOfChars).toUpperCase()).toList()
         : weekDays.map((f) => f.substring(0, numOfChars)).toList();
   }
+
+  static List<int> dayOfSundaysForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final sundays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 1) {
+        sundays.add(index+1);
+      }
+    });
+    return sundays;
+  }
+
+  static List<int> dayOfMondayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 2) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
+  static List<int> dayOfTuesdayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 3) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
+  static List<int> dayOfWednesdayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 4) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
+  static List<int> dayOfThursdayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 5) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
+  static List<int> dayOfFridayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 5) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
+  static List<int> dayOfSaturdayForDate(DateTime date) {
+    final days = numberOfDaysForDate(date);
+    final saturdays = <int>[];
+    List.generate(days, (int index) {
+      if ((index+1) % 7 == 6) {
+        saturdays.add(index+1);
+      }
+    });
+    return saturdays;
+  }
+
 }
